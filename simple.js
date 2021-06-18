@@ -1,15 +1,31 @@
-function simple()
-{
-	var p=getElementsById('principal');
-	var r=getElementsById('interest');
-	var t=getElementsById('time');
-	var i,s;
-	if(p!='')
+
+
+		function simple(){
+
+	var p=document.getElementById("principal").value;
+	var r=document.getElementById("interest").value;
+	var t=document.getElementById("time").value;
+	var si=0;
+	var s=0;
+	
+	
+       si=parseInt((p*r*t)/100);
+       s=parseInt(+si + +p);
+     
+       document.getElementById('num1').innerHTML="If You deposit "+p+',';
+       document.getElementById('num2').innerHTML="at an interest rate of "+r+'%';
+       document.getElementById('num3').innerHTML="you will receive an amount of "+si;
+       document.getElementById('num4').innerHTML="in the year "+(2020+ +t);
+      
+       }
+
+       
+	function slider(val)
 	{
-       i=(p*r*t)/100;
-       s=p+i;
-       alert("total sum will be  "+s+" with interest of"+i);
-       return true;
+		
+		
+		document.getElementById("val").innerHTML=val+"%";
 	}
-	return false;
-}
+	
+
+	
