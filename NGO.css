@@ -1,18 +1,32 @@
+
 body{
-	justify-content: center;
-	background-color: lightgreen;
-	color: olive;
+	background-color: white;
 }
 h1{
-	position:absolute;
-	background-color: lightgoldenrodyellow;
-	color: olive;
+	justify-content: center;
+	
+	background-color: white;
+	color: grey;
+	font-weight: 20px ;
+	font-family: sans-serif;
 }
-h3{
-	color: olive;
+
+#val{
+	margin-left: 250px;
+	margin-top: -20px;
 }
-fieldset{
-	margin-left:auto;
-	background-color: ghostwhite;
-	color: black;
+form{
+	margin-left: 60px;
+}
+#principal{
+margin-left: 50px;
+}
+#interest{
+	margin-left: 10px;
+}
+#time{
+	margin-left: 25px;
+}
+#num1,#num2,#num3,#num4{
+	margin-left: auto;
 }
