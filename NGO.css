@@ -1,0 +1,18 @@
+body{
+	justify-content: center;
+	background-color: lightgreen;
+	color: olive;
+}
+h1{
+	position:absolute;
+	background-color: lightgoldenrodyellow;
+	color: olive;
+}
+h3{
+	color: olive;
+}
+fieldset{
+	margin-left:auto;
+	background-color: ghostwhite;
+	color: black;
+}
