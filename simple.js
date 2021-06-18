@@ -16,6 +16,12 @@
        document.getElementById('num2').innerHTML="at an interest rate of "+r+'%';
        document.getElementById('num3').innerHTML="you will receive an amount of "+si;
        document.getElementById('num4').innerHTML="in the year "+(2020+ +t);
+			
+			  if(p==0 ||p<0)
+      {
+      	alert("enter positive number more than 0");
+      	p.focus();
+      }
       
        }
 
