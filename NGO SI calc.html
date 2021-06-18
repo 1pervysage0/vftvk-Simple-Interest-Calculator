@@ -3,21 +3,39 @@
 <head>
 	<meta charset="utf-8">
 	<title>SIMPLE INTEREST CALCULATOR</title>
-	<script type="text/javascript" href="simple.jss"></script>
 	<link rel="stylesheet" type="text/css" href="NGO.css">
+	
 </head>
 <body>
-	<h1>EVERYONE CAN GET RICH</h1>
-	<p>Welcome to everyone can geet rich NGO where we improve the financial condition of the common man by the simple interest method</p>
-	<h3>Calculate your Wealth Multiplication Here</h3>
-	<form onsubmit="return simple()">
-	<fieldset><legend>CALCULATOR</legend>
-		PRINCIPAL AMOUNT:<input type="number" name="principal" id=principal><br><br>
-		INTEREST %:<input type="number" name="interest" id="interest"><br><br>
-		TIME(yrs):<input type="number" name="time" id="time">
-		<br><br>
-		<input type="submit" name="submit" id="submit" value="Calculate">
-	</fieldset></form>
+	<h1>Simple Interest Calculator</h1>
 
+	
+
+		Amount 
+		<input type="number" name="principal" id="principal"><br><br>
+		Interest Rate 
+		<input type="range" name="interest" min="0.5" max="50" id="interest" onchange="slider(this.value);"><div  id="val" value=""></div>
+		<br><br>
+		No of Years 
+		<select id="time"> 
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+		</select> 
+		<br><br>
+	
+		<button onclick="simple()">Compute Interest</button><br>
+	
+	<script type="text/javascript" src="simple.js"></script>
+<div id="num1"></div>
+<div id="num2"></div>
+<div id="num3"></div>
+<div id="num4"></div>
+<footer>
+  <br>      &#169; Everyone can get rich
+</footer>
 </body>
 </html>
